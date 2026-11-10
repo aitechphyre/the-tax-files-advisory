@@ -126,7 +126,9 @@ section.block{padding-block:80px}
 .banner{overflow:hidden}
 .banner .bn-grid{display:block;position:static}
 .banner .bn-txt{display:grid;gap:24px;justify-items:start;max-width:min(600px,54%)}
-.banner .bn-ph{position:absolute;right:max(0px,calc(50% - 600px));top:0;height:100%;width:min(46%,447px);object-fit:cover;object-position:50% 14%;display:block;opacity:.92;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 42%,#000 90%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 42%,#000 90%,transparent 100%)}
+.banner .bn-bg{display:none}
+.banner .bn-ph{position:absolute;right:0;top:0;height:100%;width:min(46%,447px);object-fit:cover;object-position:50% 14%;display:block;opacity:.92;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 42%,#000 90%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 42%,#000 90%,transparent 100%)}
+@media(min-width:1200px){.banner .bn-bg{display:block;position:absolute;right:0;top:0;height:100%;width:52%;background:url(banner-photo.jpg) 50% 8%/cover no-repeat;filter:blur(22px) saturate(1.05);transform:scale(1.15);opacity:.8;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 45%);mask-image:linear-gradient(to right,transparent 0,#000 45%)}.banner .bn-ph{right:calc(26% - 223px);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 14%,#000 86%,transparent 100%)}}
 @media(min-width:861px){.banner{min-height:564px;display:flex;align-items:center}.banner .bn-grid{width:100%}}
 @media(max-width:860px){.banner .bn-txt{max-width:none}.banner .bn-ph{position:relative;right:auto;width:100%;height:240px;margin-top:28px;object-position:50% 14%;-webkit-mask-image:linear-gradient(to top,transparent 0,#000 45%);mask-image:linear-gradient(to top,transparent 0,#000 45%)}.banner .bn-grid{padding-bottom:0}.banner{padding-bottom:0}}
 .banner h2{max-width:20ch}
@@ -318,6 +320,7 @@ footer a{text-decoration:none}
     <p>Get a free 15-minute tax consultation to see where there may be opportunities to plan ahead and lower your tax bill. My commitment is to improve your tax experience, help lower your tax liability wherever the law allows, and propose forward-thinking solutions for your future.</p>
     <button class="btn light" type="button" data-open data-kind="call" data-topic="General consultation">Contact me today <span aria-hidden="true">&rarr;</span></button>
     </div>
+    <div class="bn-bg" aria-hidden="true"></div>
     <img class="bn-ph" src="banner-photo.jpg" alt="A tax advisor in a navy blazer" width="700" height="1254" loading="lazy">
   </div>
 </section>
