@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /page.html
+
+Sitemap: https://taxfilesadvisory.com/sitemap.xml
